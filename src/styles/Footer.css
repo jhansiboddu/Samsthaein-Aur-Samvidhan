@@ -1,0 +1,46 @@
+/* Footer Component Styles */
+
+.footer {
+    background-color: #45632b; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Vertical spacing */
+    text-align: center; /* Center align content */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* Responsive padding */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0; /* Space above the links */
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    gap: 15px; /* Space between links */
+  }
+  
+  .footer-links li {
+    margin: 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+  
+  .footer-links a:hover {
+    color: #ffa500; /* Highlight color on hover */
+  }
+  

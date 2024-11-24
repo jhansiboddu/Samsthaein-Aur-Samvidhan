@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React,{useState} from 'react';
+import { Route, Routes,Navigate } from 'react-router-dom';
+
+
+import './styles/style.css';  // Make sure the styles are linked
+import Login from './components/Login';
+import Home from "./components/Home";
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // Tracks user authentication state
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+        <Route path="/" element={isAuthenticated ? <Navigate to="/home" /> : <Login onLogin={() => setIsAuthenticated(true)} />} />
+        <Route path="/home" element={isAuthenticated? <Home />: <Navigate to="/" />} />
+      </Routes>
   );
 }
 
