@@ -1,7 +1,7 @@
 {
   "name": "constitution-project",
   "version": "0.1.0",
-  "homepage": "https://jhansiboddu.github.io/Samsthaein-Aur-Samvidhan/",
+  "homepage": "https://jhansiboddu.github.io/Samsthaein-Aur-Samvidhan",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,7 +22,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [
