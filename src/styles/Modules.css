@@ -1,0 +1,66 @@
+.modules {
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .modules h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .module-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .module-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .module-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .module-card h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .module-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #45a049;
+  }
+  
